@@ -1,0 +1,155 @@
+:root {
+    --main-radius: 5px;
+    --main-padding: 5px; 
+}
+
+.screencontainer{
+    height: 180px;
+    width: 100%;
+    background-color: lightgray;
+    border: black 1px solid;
+    display: flex;
+    align-items: center;
+
+}
+
+.screen{
+    margin-left: 20px;
+    font-size: 60px;
+}
+
+.container{
+    margin-top: 0.5rem;
+    display: grid;
+    height: 60vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "number1 number2 number3"
+        "number4 number5 number6"
+        "number7 number8 number9"
+        "minussign number0 plussign"
+        "multiplysign clear dividesign"
+        "equalssign equalssign equalssign";
+    grid-gap: 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    /*line-height: normal; */
+}
+
+#number1{
+    background: black;
+    grid-area: number1;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    cursor: pointer;
+}
+#number2{
+    background: black;
+    grid-area: number2;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    cursor: pointer;
+}
+#number3{
+    background: black;
+    grid-area: number3;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    cursor: pointer;
+}
+#number4{
+    background: black;
+    grid-area: number4;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    cursor: pointer;
+}
+#number5{
+    background: black;
+    grid-area: number5;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    cursor: pointer;
+}
+#number6{
+    background: black;
+    grid-area: number6;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    cursor: pointer;
+}
+#number7{
+    background: black;
+    grid-area: number7;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    cursor: pointer;
+}
+#number8{
+    background: black;
+    grid-area: number8;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    cursor: pointer;
+}
+#number9{
+    background: black;
+    grid-area: number9;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    cursor: pointer;
+}
+#number0{
+    background: black;
+    grid-area: number0;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    cursor: pointer;
+}
+#minussign{
+    background: darkorange;
+    grid-area: minussign;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    cursor: pointer;
+}
+#plussign{
+    background: darkorange;
+    grid-area: plussign;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    cursor: pointer;
+}
+#multiplysign{
+    background: darkorange;
+    grid-area: multiplysign;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    cursor: pointer;
+}
+#dividesign{
+    background: darkorange;
+    grid-area: dividesign;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    cursor: pointer;
+}
+#clear{
+    background: darkorange;
+    grid-area: clear;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    cursor: pointer;
+}
+footer{
+    background: black;
+    grid-area: equalssign;
+    font-size: 100px;
+    cursor: pointer;
+
+}
